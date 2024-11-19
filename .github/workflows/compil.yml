@@ -11,3 +11,5 @@ jobs:
           node-version: 22.9.0
       - run: npm ci
       - run: npm run build
+      - name: List dist output
+        run: ls dist/
