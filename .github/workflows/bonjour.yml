@@ -9,4 +9,4 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run : sudo apt install cowsay
-      - run: cat README.md | cowsay# Affiche le contenu du fichier `README.md` à la base du dépôt
+      - run: cat README.md | cowsay
