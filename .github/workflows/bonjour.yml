@@ -8,4 +8,5 @@ jobs:
       - run: ls -l # Liste les fichier du répertoire courant
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: cat README.md # Affiche le contenu du fichier `README.md` à la base du dépôt
+      - run : sudo apt install cowsay
+      - run: cat README.md | cowsay# Affiche le contenu du fichier `README.md` à la base du dépôt
