@@ -10,7 +10,7 @@ jobs:
         id: readme
         uses: juliangruber/read-file-action@v1
         with:
-          path: ./README.ms
+          path: ./README.md
       - name: print output
         run: |
           echo "${{ steps.readme.outputs.cowsay }}"
