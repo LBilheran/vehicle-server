@@ -4,5 +4,9 @@ on:
 jobs:
   dire_bonjour:
     runs-on: ubuntu-22.04
+    container:
+      image: ghcr.io/cicd-lectures/gitpod:latest
+      options: --user=root
     steps:
-      - run: echo "Bonjour 👋"
+      - uses: actions/checkout@v4
+      - run: cat README.md | cowsay
