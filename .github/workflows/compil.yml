@@ -2,11 +2,12 @@ name: Compil
 on:
   - push
 jobs:
-  dire_bonjour:
+  compilation:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22.9.0
-      - run: npx tsc
+      - uses: npm ci
+      - run: npm run build
