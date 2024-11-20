@@ -1,6 +1,7 @@
 name: Compil
 on:
   - push
+  - pull_request
 jobs:
   compilation:
     runs-on: ubuntu-22.04
